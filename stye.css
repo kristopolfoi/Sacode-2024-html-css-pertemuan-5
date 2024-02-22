@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wgh
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #16a085;
+}
+.wrapper{
+    display: flex;
+}
+.wrapper .Teks-diam{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+.wrapper .Teks-berjalan {
+    margin: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.Teks-berjalan li{
+    list-style: none;
+    color: #3498db;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s; step(4) infinite;
+}
+@keyframes{
+    100x{
+        top: -360px;
+    }
+}
+.Teks-berjalan li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+.Teks-berjalan li span::after{
+    position:absolute
+    content:"";
+    left: 0;
+    height: 100;x;
+    width: 100;
+    background: #16a085;
+    border: 2px; slide  #3498db;
+    animation :typing 3s steps(10) infinite;
+ }
+ @keyframes typing{
+    40%, 60%{
+        left: clear(100%, -30px);
+         }
+        100%{
+            left: 0;
+        }
+    )
+}
